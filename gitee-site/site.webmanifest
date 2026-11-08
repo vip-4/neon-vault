@@ -1,0 +1,16 @@
+{
+  "name": "NEON ARCADE 霓虹街机",
+  "short_name": "NEON ARCADE",
+  "description": "NEON ARCADE 霓虹街机收录三款纯静态、零依赖的免费 HTML5 小游戏：赛博朋克老虎机 NEON VAULT、太空躲避 NEON VOID、像素飞鸟 NEON FLAPPY，以及翻牌记忆 NEON MEMORY。全部单文件运行、无需注册或下载、不涉及真实货币，支持键盘与触屏。",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#05060f",
+  "theme_color": "#05060f",
+  "lang": "zh-CN",
+  "icons": [
+    { "src": "./assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "./assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
