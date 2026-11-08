@@ -1,0 +1,30 @@
+{
+  "id": "./",
+  "name": "NEON VAULT 霓虹金库",
+  "short_name": "NEON VAULT",
+  "description": "免费赛博朋克 5×3 老虎机：纯静态、零依赖、无真实货币。",
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#03040b",
+  "theme_color": "#03040b",
+  "categories": ["games", "entertainment"],
+  "prefer_related_applications": false,
+  "icons": [
+    { "src": "./assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "./assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    {
+      "name": "开始游戏",
+      "short_name": "试玩",
+      "description": "滚动到在线试玩区并进入金库",
+      "url": "./#play",
+      "icons": [{ "src": "./assets/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
