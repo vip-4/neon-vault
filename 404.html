@@ -23,12 +23,25 @@
     <a href="./">返回 NEON ARCADE</a>
   </div>
   <script>
-  /* 兼容无扩展名链接（如 /neon-vault）自动跳转到对应 .html 页面 */
+  // 兼容无扩展名或带杂字符（引号/空格/反斜杠/控制字符等）的链接，自动修正后跳转到对应 .html 页面
   (function(){
-    var path = location.pathname.replace(/\/+$/, '');
-    var name = path.split('/').pop();
+    var raw = decodeURIComponent(location.pathname).replace(/\/+$/, '');
+    var out = '';
+    for (var i = 0; i < raw.length; i++) {
+      var c = raw.charAt(i);
+      var code = raw.charCodeAt(i);
+      if (c === '"' || c === "'" || c === '<' || c === '>' || c === '\\' || c === ' ') continue;
+      if (code < 32 || code === 127) continue;
+      out += c;
+    }
+    var name = out.split('/').pop();
+    var base = name.replace(/\.html$/i, '');   // 去掉可能的 .html 后缀
     var games = ['neon-vault','neon-void','flappy-neon','memory-neon'];
-    if (games.indexOf(name) !== -1) { location.replace(path + '.html'); }
+    if (games.indexOf(base) !== -1) {
+      var segs = out.split('/');
+      segs[segs.length - 1] = base;             // 用干净的基础名替换末段
+      location.replace(segs.join('/') + '.html');
+    }
   })();
   </script>
 </body>
