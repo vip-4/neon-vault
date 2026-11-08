@@ -1,0 +1,16 @@
+/* TEAM */
+Project: NEON VAULT 霓虹金库
+Role: 独立前端游戏 / 视觉 / 无障碍 / 静态站点实践
+Site: https://vip-4.github.io/neon-vault/
+Language: zh-CN
+
+/* TECH */
+Standards: HTML5, CSS3, ECMAScript 2020, Canvas 2D, Web Audio API, ARIA
+Architecture: Single HTML file with inline CSS and JavaScript
+Assets: Original SVG / PNG icons, generated locally; no external images or fonts
+Randomness: Web Crypto + rejection sampling, Math.random() fallback
+Hosting: Cloudflare Pages (static output)
+Last update: 2026-11-08
+
+/* NOTES */
+This is a free virtual entertainment demo. Credits have no monetary value and cannot be deposited, withdrawn, or redeemed. No real-money gambling, payment, account, tracking, or analytics services are provided.
