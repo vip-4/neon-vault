@@ -1,0 +1,19 @@
+/* humanstxt.org */
+NEON ARCADE — 霓虹街机
+纯静态、零依赖的免费 HTML5 小游戏合集。
+
+TEAM
+  Developer: NEON ARCADE frontend
+  Role: Design + Build
+
+THANKS
+  原生 HTML5 / CSS3 / JavaScript
+  Cloudflare Pages, GitHub Pages, Gitee, AtomGit
+
+TECHNOLOGY
+  HTML5 Canvas, CSS3, Vanilla JavaScript
+  无框架、无构建步骤、无外部请求
+
+SITE
+  Last deploy: 2026-11-09
+  Games: NEON VAULT, NEON VOID, NEON FLAPPY, NEON MEMORY
