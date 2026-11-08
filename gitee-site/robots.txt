@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://neon-vault-15q.pages.dev/sitemap.xml
