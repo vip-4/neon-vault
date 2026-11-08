@@ -35,8 +35,13 @@
       out += c;
     }
     var name = out.split('/').pop();
+    var base = name.replace(/\.html$/i, '');   // 去掉可能的 .html 后缀
     var games = ['neon-vault','neon-void','flappy-neon','memory-neon'];
-    if (games.indexOf(name) !== -1) { location.replace(out + '.html'); }
+    if (games.indexOf(base) !== -1) {
+      var segs = out.split('/');
+      segs[segs.length - 1] = base;             // 用干净的基础名替换末段
+      location.replace(segs.join('/') + '.html');
+    }
   })();
   </script>
 </body>
