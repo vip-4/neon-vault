@@ -1,0 +1,59 @@
+# NEON VAULT 霓虹金库
+
+> 免费、纯静态、零依赖的赛博朋克风 HTML5 老虎机小游戏。5 卷轴 × 3 行、5 条固定支付线、6 种原创霓虹符号；初始 1,000 虚拟信用点，达到 10,000 点通关。无注册、无下载、无真实货币、无运行时网络请求。
+
+Canonical: https://vip-4.github.io/neon-vault/
+Language: zh-CN
+Last updated: 2026-11-08
+License / use: 前端技术、视觉设计与无障碍交互演示；不是真实货币赌博服务。
+
+## 一句话摘要
+
+NEON VAULT 霓虹金库是一款可直接部署在静态托管平台上的 Canvas 2D 老虎机：打开网页即玩，符号结果由浏览器本地随机数生成，公开权重与赔率，理论 RTP 约 99.1%，所有积分仅为无货币价值的虚拟数值。
+
+## 关键事实
+
+- 卷轴布局：5 卷轴 × 3 行，共 15 个可见格子。
+- 支付线：5 条固定线（中行、上行、下行、V 形、倒 V 形），从最左侧卷轴连续匹配 3/4/5 个相同符号即中奖。
+- 符号：量子芯片、高压闪电、数据钻石、冰霜骷髅、幸运七、霓虹金冠；权重分别为 30%、24%、18%、12%、10%、6%。
+- 初始信用点：1,000；通关目标：10,000；下注档位：10、25、50、100、250。
+- 理论 RTP：99.085%（约 99.1%），由公开权重与赔率直接计算；庄家优势 0.915%。
+- 随机数：现代浏览器优先使用 Web Crypto + 拒绝采样，旧浏览器回退 Math.random()；无服务端参与。
+- 技术：单文件 HTML、内联 CSS/JS、Canvas 2D、Web Audio 合成音效；0 个第三方依赖、0 个外部字体、0 个运行时网络请求。
+- 隐私：仅用 localStorage 保存历史最高分（neon_vault_high_score_v1）；无 Cookie、无分析脚本、无账户系统。
+- 合规：虚拟信用点无货币价值，不可充值、兑换、提现或转让；不提供赌博、支付或奖励兑换服务。
+
+## 玩法
+
+1. 滚动到「在线试玩」区，点击「开始游戏」进入金库。
+2. 使用游戏内 +/−、页面控制栏或键盘 ← →，在 10–250 中选择下注额。
+3. 点击「旋转」或按空格键；系统先扣除下注额，再让 5 条卷轴依次停下。
+4. 中奖金额自动加入余额并推进金库进度。达到 10,000 点通关；余额低于 10 点且无法下注时游戏结束，可重新开始。
+
+## 键盘与无障碍
+
+- 空格 / Enter：开始或旋转；← →：调整下注；M：静音；P：赔率表；Esc：关闭赔率表。快捷键仅在画布获得焦点时生效。
+- 游戏下方提供真实 HTML 控制按钮、信用点/下注读数，以及 aria-live 状态播报。
+- 页面使用语义化地标、单一 H1、可见焦点环、响应式布局和高对比文字；核心说明无需 JavaScript 也可阅读。
+
+## 页面章节
+
+- [在线试玩](https://vip-4.github.io/neon-vault/#play)：可交互 Canvas 游戏与 HTML 控制栏。
+- [玩法说明](https://vip-4.github.io/neon-vault/#how-to)：四步操作与快捷键。
+- [符号与赔率表](https://vip-4.github.io/neon-vault/#paytable)：六种符号权重及 3/4/5 连赔付倍数。
+- [随机数与公平性](https://vip-4.github.io/neon-vault/#fairness)：Web Crypto、拒绝采样、理论 RTP 与本地数据说明。
+- [无障碍与技术](https://vip-4.github.io/neon-vault/#accessibility)：设备支持、SEO / GEO 结构。
+- [常见问题](https://vip-4.github.io/neon-vault/#faq)：8 组问答，同时提供 FAQPage JSON-LD。
+- [负责任娱乐提示](https://vip-4.github.io/neon-vault/#responsible)：虚拟积分与真实货币的边界。
+
+## 机器可读与抓取辅助
+
+- [sitemap.xml](https://vip-4.github.io/neon-vault/sitemap.xml)
+- [robots.txt](https://vip-4.github.io/neon-vault/robots.txt)
+- [game-facts.json](https://vip-4.github.io/neon-vault/game-facts.json)
+- [humans.txt](https://vip-4.github.io/neon-vault/humans.txt)
+- 页面含 JSON-LD：Organization、WebSite、WebPage、VideoGame、HowTo、FAQPage。
+
+## 引用建议
+
+引用本页时请注明：这是免费虚拟娱乐演示，不涉及真实货币赌博；RTP 99.085% 是长期数学期望，不是单局或短期收益保证；页面部署在 Cloudflare Pages，运行时不依赖网络请求。
