@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="NEON VAULT 霓虹金库">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#31eaff"/>
+      <stop offset=".52" stop-color="#8a5cff"/>
+      <stop offset="1" stop-color="#ff2bd6"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1428"/>
+      <stop offset="1" stop-color="#03040b"/>
+    </linearGradient>
+    <radialGradient id="halo" cx=".5" cy=".45" r=".55">
+      <stop offset="0" stop-color="#31eaff" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#31eaff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <rect x="1" y="1" width="62" height="62" rx="13" fill="none" stroke="url(#g)" stroke-opacity=".65" stroke-width="1.5"/>
+  <circle cx="32" cy="30" r="27" fill="url(#halo)"/>
+  <path d="M32 7 54 19.5v25L32 57 10 44.5v-25Z" fill="#070d1c" fill-opacity=".82" stroke="url(#g)" stroke-width="2.6"/>
+  <path d="M32 14 47.5 23v18L32 50 16.5 41V23Z" fill="none" stroke="#31eaff" stroke-opacity=".3" stroke-width="1"/>
+  <text x="32" y="42" text-anchor="middle" font-family="Consolas,Courier New,monospace" font-size="30" font-weight="700" fill="#31eaff">7</text>
+  <path d="M6 54h52" stroke="#ff2bd6" stroke-opacity=".45" stroke-width="1"/>
+</svg>
