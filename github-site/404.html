@@ -22,5 +22,14 @@
     <p>这一页似乎掉进了霓虹虚空。返回街机大厅继续游玩吧。</p>
     <a href="./">返回 NEON ARCADE</a>
   </div>
+  <script>
+  /* 兼容无扩展名链接（如 /neon-vault）自动跳转到对应 .html 页面 */
+  (function(){
+    var path = location.pathname.replace(/\/+$/, '');
+    var name = path.split('/').pop();
+    var games = ['neon-vault','neon-void','flappy-neon','memory-neon'];
+    if (games.indexOf(name) !== -1) { location.replace(path + '.html'); }
+  })();
+  </script>
 </body>
 </html>
