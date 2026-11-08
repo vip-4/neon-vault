@@ -1,0 +1,122 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "@id": "https://vip-4.github.io/neon-vault/#game",
+  "name": "NEON VAULT 霓虹金库",
+  "alternateName": "NEON VAULT",
+  "url": "https://vip-4.github.io/neon-vault/",
+  "description": "免费、纯静态、零依赖的赛博朋克 5×3 老虎机。5 条固定支付线、6 种原创霓虹符号，初始 1,000 虚拟信用点，目标 10,000。",
+  "inLanguage": "zh-CN",
+  "genre": ["Casino", "Slot machine", "Cyberpunk", "Casual"],
+  "gamePlatform": "Web browser",
+  "applicationCategory": "GameApplication",
+  "operatingSystem": "任意支持 HTML5 Canvas 的现代浏览器",
+  "playMode": "SinglePlayer",
+  "numberOfPlayers": 1,
+  "isAccessibleForFree": true,
+  "dateModified": "2026-11-08",
+  "publisher": { "@type": "Organization", "name": "NEON VAULT" },
+  "layout": {
+    "reels": 5,
+    "rows": 3,
+    "visibleCells": 15,
+    "paylines": 5,
+    "paylinePatterns": [
+      [1, 1, 1, 1, 1],
+      [0, 0, 0, 0, 0],
+      [2, 2, 2, 2, 2],
+      [0, 1, 2, 1, 0],
+      [2, 1, 0, 1, 2]
+    ],
+    "matchRule": "从最左侧卷轴开始连续匹配 3、4 或 5 个相同符号；5 条线分别结算"
+  },
+  "virtualEconomy": {
+    "currencyName": "虚拟信用点",
+    "hasMonetaryValue": false,
+    "initialCredits": 1000,
+    "goal": 10000,
+    "betLevels": [10, 25, 50, 100, 250],
+    "minimumPlayableBet": 10,
+    "canDeposit": false,
+    "canWithdraw": false,
+    "canRedeem": false,
+    "realMoneyGambling": false
+  },
+  "symbols": [
+    { "name": "量子芯片", "en": "CHIP", "weightPercent": 30, "payoutMultipliers": { "3": 1.5, "4": 4, "5": 12 } },
+    { "name": "高压闪电", "en": "BOLT", "weightPercent": 24, "payoutMultipliers": { "3": 2.5, "4": 7, "5": 18 } },
+    { "name": "数据钻石", "en": "DIAMOND", "weightPercent": 18, "payoutMultipliers": { "3": 3.5, "4": 10, "5": 30 } },
+    { "name": "冰霜骷髅", "en": "SKULL", "weightPercent": 12, "payoutMultipliers": { "3": 6, "4": 15, "5": 60 } },
+    { "name": "幸运七", "en": "SEVEN", "weightPercent": 10, "payoutMultipliers": { "3": 9, "4": 25, "5": 120 } },
+    { "name": "霓虹金冠", "en": "CROWN", "weightPercent": 6, "payoutMultipliers": { "3": 15, "4": 47, "5": 250 } }
+  ],
+  "rtp": {
+    "theoretical": 0.99085,
+    "percent": "99.085%",
+    "display": "≈ 99.1%",
+    "houseEdge": 0.00915,
+    "basis": "按公开符号权重与三连/四连/五连赔率计算，5 条独立支付线长期期望",
+    "note": "长期数学期望，不代表单局或短期收益；历史结果不预测未来结果"
+  },
+  "randomness": {
+    "primary": "Web Crypto crypto.getRandomValues()",
+    "biasMitigation": "rejection sampling",
+    "fallback": "Math.random()",
+    "serverSide": false,
+    "runtimeNetworkRequests": 0
+  },
+  "technology": {
+    "htmlFiles": 1,
+    "inlineCss": true,
+    "inlineJavaScript": true,
+    "externalDependencies": 0,
+    "externalFonts": 0,
+    "rendering": "Canvas 2D",
+    "audio": "Web Audio API synthesised tones",
+    "storage": ["localStorage:neon_vault_high_score_v1"],
+    "cookies": false,
+    "analytics": false,
+    "hosting": "Cloudflare Pages"
+  },
+  "accessibility": {
+    "keyboard": ["Space", "Enter", "ArrowLeft", "ArrowRight", "M", "P", "Escape"],
+    "shortcutScope": "canvas focused",
+    "htmlControlBar": true,
+    "ariaLiveStatus": true,
+    "semanticLandmarks": true,
+    "singleH1": true,
+    "visibleFocus": true,
+    "responsiveBreakpoints": "320px 至桌面大屏",
+    "reducedMotion": "页面过渡尊重 prefers-reduced-motion"
+  },
+  "seo": {
+    "title": true,
+    "metaDescription": true,
+    "metaKeywords": true,
+    "canonical": "https://vip-4.github.io/neon-vault/",
+    "robots": "index, follow",
+    "openGraph": true,
+    "twitterCard": "summary_large_image",
+    "jsonLd": ["Organization", "WebSite", "WebPage", "VideoGame", "HowTo", "FAQPage"],
+    "robotsTxt": true,
+    "sitemapXml": true
+  },
+  "geo": {
+    "answerFirstSummary": true,
+    "quotableNumbers": true,
+    "dataTables": true,
+    "questionHeadings": true,
+    "faqPairs": 8,
+    "llmsTxt": true,
+    "machineReadableFacts": true,
+    "staticContentWithoutJavaScript": true
+  },
+  "compliance": {
+    "purpose": "前端技术、视觉设计与无障碍交互演示",
+    "realMoneyBetting": false,
+    "accountSystem": false,
+    "paymentApi": false,
+    "rewardRedemption": false,
+    "disclaimer": "仅供娱乐，不涉及真实货币；若受赌博问题困扰，请寻求当地专业支持。"
+  }
+}
